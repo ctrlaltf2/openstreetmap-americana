@@ -16,7 +16,9 @@ export const border = "hsl(0, 2%, 47%)";
 export const borderCasing = `hsl(${hueBorderCasing}, 35%, 86%)`;
 
 export const parkFill = "hsl(136, 41%, 89%)";
+export const cemeteryFill = "hsl(136, 41%, 80%)";
 export const parkOutline = "hsla(136, 41%, 70%, 50%)";
+export const cemeteryOutline = "hsla(136, 41%, 70%, 40%)";
 export const parkLabel = "hsl(136, 71%, 29%)";
 export const parkLabelHalo = "hsl(90, 27%, 94%)";
 
