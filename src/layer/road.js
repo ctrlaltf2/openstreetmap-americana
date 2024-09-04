@@ -51,7 +51,7 @@ const expresswaySelector = ["match", getExpressway, 1];
 const smallServiceSelector = [
   "match",
   ["get", "service"],
-  ["parking_aisle", "driveway"],
+  ["parking_aisle", "driveway", "alley"],
 ];
 const isUnpaved = ["==", ["get", "surface"], "unpaved"];
 
