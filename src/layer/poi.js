@@ -43,22 +43,6 @@ var iconDefs = {
     color: Color.poi.transport,
     description: "Bus stop",
   },
-  car_repair: {
-    classes: {
-      car: ["car_repair"],
-    },
-    sprite: "poi_car_repair",
-    color: Color.poi.consumer,
-    description: "Car mechanic",
-  },
-  car_shop: {
-    classes: {
-      car: ["car"],
-    },
-    sprite: "poi_car_shop",
-    color: Color.poi.consumer,
-    description: "Car dealership",
-  },
   taxi: {
     classes: {
       office: ["taxi"],
@@ -74,14 +58,6 @@ var iconDefs = {
     sprite: "poi_coffee_cup",
     color: Color.poi.consumer,
     description: "Coffee shop",
-  },
-  fuel: {
-    classes: {
-      fuel: ["fuel"],
-    },
-    sprite: "poi_fuel",
-    color: Color.poi.consumer,
-    description: "Gas station",
   },
   fire_station: {
     classes: {
@@ -139,14 +115,6 @@ var iconDefs = {
     sprite: "poi_museum",
     color: Color.poi.attraction,
     description: "Museum",
-  },
-  parking: {
-    classes: {
-      parking: ["parking"],
-    },
-    sprite: "poi_p",
-    color: Color.poi.infrastructure,
-    description: "Parking",
   },
   police: {
     classes: {
@@ -327,13 +295,10 @@ export const poi = {
       "match",
       ["get", "subclass"],
       [
-        ...getSubclasses(iconDefs.fuel),
         ...getSubclasses(iconDefs.bar),
         ...getSubclasses(iconDefs.bookstore),
         ...getSubclasses(iconDefs.coffee),
         ...getSubclasses(iconDefs.supermarket),
-        ...getSubclasses(iconDefs.car_shop),
-        ...getSubclasses(iconDefs.car_repair),
         ...getSubclasses(iconDefs.hotel),
         ...getSubclasses(iconDefs.hostel),
       ],
@@ -390,7 +355,6 @@ export const poi = {
         "library",
         "museum",
         "police",
-        ...getSubclasses(iconDefs.fuel),
         ...getSubclasses(iconDefs.post_office),
         ...getSubclasses(iconDefs.pow_buddhist),
         ...getSubclasses(iconDefs.pow_christian),
@@ -410,8 +374,6 @@ export const poi = {
         ...getSubclasses(iconDefs.bar),
         ...getSubclasses(iconDefs.bookstore),
         ...getSubclasses(iconDefs.coffee),
-        ...getSubclasses(iconDefs.car_shop),
-        ...getSubclasses(iconDefs.car_repair),
         ...getSubclasses(iconDefs.taxi),
         ...getSubclasses(iconDefs.hotel),
         ...getSubclasses(iconDefs.hostel),
